@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+{% filter markdown %}
+
+# Software
+
+<img class="height50 floatright" src="/static/img/eff.png">
+
+I am an open source software enthusiast, and I am also an advocate for
+software patent reform. Software patents are threatening innovation,
+particularly for small businesses and entrepreneurs. See this [EFF
+page](https://www.eff.org/patent) for a good overview of the
+issues. Listen to When Patents Attack! [Part
+One](http://www.thisamericanlife.org/radio-archives/episode/441/when-patents-attack)
+and [Part
+Two](http://www.thisamericanlife.org/radio-archives/episode/496/when-patents-attack-part-two)
+by [This American Life](http://www.thisamericanlife.org/) and [Planet
+Money](http://www.npr.org/blogs/money/).
+
+Code is developed by members of the [Internet Research
+Lab](http://internet.byu.edu) and through undergraduate mentoring.
+
+## Security Research
+
+[Secure Socket API](https://owntrust.org): The secure socket API
+extends the POSIX socket API to provide simple developer usability for
+TLS and administrator control over how TLS is configured on their
+machines. Led by Mark O'Neill.
+
+[TrustBase](https://owntrust.org): TrustBase 
+is an architecture that provides certificate-based authentication as 
+an operating system service.  TrustBase enforces best practices for 
+certificate validation for all applications and transparently enables 
+existing applications to be strengthened against failures of the CA 
+system. Led by Mark O'Neill.
+
+## Network Research
+
+[WiFu](https://github.com/zappala/wifu): A composable toolkit for
+experimental wireless transport protocols, from the
+[WiFu](http://internet.byu.edu/research/wifu) project. Designed to
+help researchers and developers create transport protocols in user
+space. Led by Randy Buck
+
+[omnet-extension](https://github.com/byu-ilab/omnet-extension) and
+[inet-extension](https://github.com/byu-ilab/inet-extension): Code for
+OMNET++ that enables the simulator to interact with the decision
+engine of a streaming video player, from the [Dynamic Adaptive
+Streaming over
+HTTP](https://internet.byu.edu/research/dynamic-adaptive-streaming-over-http)
+project. Led by Travis Andelin.
+
+## Family History
+      
+[leaf](https://leaf.byu.edu):A free website to analyze your
+FamilySearch tree and find people that need your attention. You can
+search for people who are missing a birth or marriage date, haven't
+yet been baptized, or numerous other criteria. Uses colorful charts or
+a Google-style search to show the results. Led by Daniel Zappala.
+
+Some of the code for leaf has been released [FamilyTree sample
+app](https://github.com/byu-osl/familytree-sample-app).
+
+[Python GEDCOM Parser](https://github.com/rootsdev/python-gedcom-parser): A basic parser
+for the GEDCOM 5.5 format. Led by Daniel Zappala.
+
+Civic Apps
+----------
+
+[Citizen Budget](https://citizenbudget.org): An online application
+showing the details of your city's finances, using charts and
+graphs. Used to display the budget for the city of [Cedar
+Hills](https://cedarhills.org) at
+[budget.cedarhills.org](http://budget.cedarhills.org). Led by Daniel Zappala
+
+Web Design
+----------
+
+I have started putting up all of the web pages as open source, with
+the graphics and design elements licensed via Creative Commons. These
+include:
+
+- My [personal](https://github.com/zappala/personal-web) web pages
+  for this site, [zappala.byu.edu](http://zappala/byu.edu).
+
+- My [campaign](https://github.com/zappala/campaign) campaign pages
+  for Cedar Hills City Council, hosted at [vote.zappala.org
+ ](http://vote.zappala.org).
+
+- The [pages](https://github.com/byu-ilab/ilab-web) for the [BYU
+  Internet Research Lab](http://internet.byu.edu).
+
+- The [pages](https://github.com/byu-osl/osl-webpages) for the [BYU
+  Open Source Lab](http://osl.byu.edu).
+
+- The pages for [CS 360](https://github.com/zappala/cs360-web) and
+  [CS 660](https://github.com/zappala/cs660-web), containing all of
+  my course materials, including assignments and lecture notes.
+
+Past Projects
+-------------
+
+Past projects (code not available here, but may be found on the
+Internet) include:
+
+- RSVP: Resource Reservation Protocol. RVSP helps to provide Quality
+  of Service connections in the Internet by making resource
+  reservations on routers. It was conceived by a group of researchers
+  at USC/ISI and Xerox PARC, then evolved into a proposed standard
+  within the IETF. I worked as the primary author of RSVP code in the
+  SunOS 4.3 kernel, which was later ported to the BSD operating system
+  kernels. Reference code can be downloaded from the FreeBSD team. I
+  was also a member of the ISI Development team, which wrote the RSVP
+  daemon distributed by ISI. ISI's RSVP daemon is a reference
+  implementation for various venders; for example, RSVP is currently
+  implemented in several Cisco routers. See *L. Zhang , S. Deering,
+  D. Estrin, S. Shenker and D. Zappala, RSVP: A Resource ReSerVation
+  Protocol. IEEE Network, September 1993* and RFC 2205.
+
+- RSRR: A Routing Interface for RSVP Daniel Zappala, with revisions by
+  Jeff Kann and others. RSRR is the interface between RSVP (Internet
+  resource reservation protocol) and multicast routing protocols; RSRR
+  is implemented in mrouted (multicast routing daemon) and RSVPd
+  (Resource Reservation Protocol daemon). mrouted is distributed with
+  most Unix operating systems.
+
+- Treecalc: A Tool for Evaluating Multicast Routing Protocols, Daniel
+  Zappala, with contributions by Aaron Fabbri. Treecalc compares
+  different types of multicast trees based on delay, cost, traffic
+  concentration, and router state. This simulator was used for our
+  work on multiple cores and SSM proxies.
+
+- SDRP: Source Demand Routing Protocol, Daniel Zappala and Kannan
+  Varadhan. SDRP can be used to source route packets in the Internet,
+  for example to avoid congestion. See RFC 1940.
+
+{% endfilter %}
+
+{% endblock %}

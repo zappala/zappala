@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+
+[packages]
+doit = "==0.29.0"
+flask = "*"
+frozen-flask = "*"
+flask-markdown = "*"
+
+[requires]
+python_version = "2.7"
