@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block page %}
+
+{% filter markdown %}
+
+# Hiring Undergraduate Research Assistants, Summer 2020
+
+I'm interesting in hiring undergraduates to conduct research this summer. I am
+willing to hire at all experience levels -- I can provide training to help you
+to contribute to a research project. Pay is at $10-$15 per hour, depending on experience.
+
+**To apply, send me an email with your resume at zappala@cs.byu.edu.**
+In your email, tell me which CS classes you are taking this semester and
+any you have planned over spring/summer. I will give preference to those
+available for full-time work who are not taking classes during spring/summer.
+
+Much of our research involves building new systems. Other parts include running
+usability studies, which requires coordinating an experiment with people to try
+our new software (sometimes on campus, sometimes remote), running statistical
+analysis, and analyzing qualitative data.
+
+I'm willing to train and mentor you in a number of roles:
+
+* systems development, including interacting with kernel modules, cryptography,
+sockets, event handling, etc. (C programming language)
+
+* app development for a new login system to replace passwords, including a mobile
+app and a desktop app or browser extension (Go, Dart/Flutter, and JavaScript)
+
+* running usability studies, including statistical analysis using R
+
+The two projects we'll be working on are:
+
+## Let's Authenticate
+
+We are developing two new systems to replace passwords for login to websites.
+This will involve systems development and then usability studies. We currently have
+a partially working mobile app and a supporting server written. Read more in
+this paper:
+
+* James S. Conners and Daniel Zappala, [Let’s Authenticate: Automated Cryptographic Authentication for the Web with Simple Account Recovery](/static/pubs/lets-auth-way-2019.pdf), Who Are You?! Adventures in Authentication Workshop, July 2019.
+
+## The Secure Socket API
+
+We are developing a system to make it much easier to create secure connections
+between programs. We already have working code but are needing to get it to
+a more mature state, essentially a well-supported open source system. This
+involves learning how OpenSSL works and then improving our code in a variety of
+ways. Read more at this site:
+
+* [https://securesocketapi.org/ssa](https://securesocketapi.org/ssa)
+
+{% endfilter %}
+
+{% endblock %}
