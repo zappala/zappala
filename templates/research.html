@@ -6,73 +6,29 @@
 
 # Research
 
-My current research is in network security and usable security, with a
-particular focus on anywhere that humans interact with security and
-privacy features.
+My current research is in network security and usable security, with a particular focus on authentication systems. I am generally interested in any situations that humans interact with security and privacy features.
 
 ## Current Projects
 
-### [TrustBase and the Secure Socket API](https://owntrust.org)
+### Let's Authenticate
 
-TrustBase
-is an architecture that provides certificate-based authentication as
-an operating system service.  TrustBase enforces best practices for
-certificate validation for all applications and transparently enables
-existing applications to be strengthened against failures of the CA
-system. The secure socket API extends the POSIX socket API to provide
-simple developer usability for TLS and administrator control over how
-TLS is configured on their machines. This work is led by Mark O'Neill.
+We are creating a system to replace password authentication for websites and mobile applications, based on issuing certificates to users. Our system provide automated registration and login, while providing privacy for users, since websites see
+only anonymous identifiers and certificate authorities can't track logins. More details can be found in our [NDSS paper](https://www.ndss-symposium.org/ndss-paper/auto-draft-251/).
 
-<img class="height300" src="/static/img/trustbase-architecture.png">
-
-### [Usable Authentication Ceremonies](https://internet.byu.edu/research/authentication-ceremony)
-
-Most popular secure messaging applications are usable because they
-hide many of the details of how encryption is provided. However, the
-strength of the security properties of these applications rests on the
-authentication ceremony, in which users validate the encryption keys
-being used. Unfortunately, recent studies show that most users do not
-know how to successfully complete this ceremony and are thus
-vulnerable to potential attacks. We have studied the usability of a
-variety of secure messaging applications and are developing methods to
-improve the usability of the authentication ceremony, so that it is
-easy for users to locate and complete the ceremony. This work is led
-by Elham Vaziripour.
-
-<img class="width200" src="/static/img/auth-ceremony.jpg">
 
 ### Grass Roots Adoption of Encryption
 
 We are interested in understanding obstacles to the adoption of
-encryption by the general public. Our current work includes a recent
-paper developing mental models of how people understand and interact
-with encryption. We are working on applying lessons learned from this
-work to new designs for secure applications. This work is led by
-Justin Wu.
+encryption by the general public. We are working to understand how
+people choose to use secure email systems and how they decide which
+methods they use to secure their physical and digital assets.
 
-<img class="height300" src="/static/img/mental-model.jpg">
-
-### Browser Security Indicators for an All-HTTPS World
-
-We are interested in understanding how to help people understand when
-they are at risk when interacting with web pages. As all web pages are
-beginning to be served over HTTPS, connection security is no longer a
-sufficient indicator of risk. This work is led by Matt Holt.
-
-### Key Management for Secure Applications
-
-A major challenge for secure applications is key management,
-particularly for the general public, who typically have little
-experience with cryptography. Significant issues include key
-discovery, key backup, and key portability.
 
 Past Research
 -------------
 
-Past research topics include measurements of TLS proxies, measurements
-of the Steam game network, cloud storage, sentiment analysis, wireless
-networks, streaming video algorithms, peer-to-peer networking, and
-multicast routing. See [Publications](/publications) for more details.
+Past research topics include improving the usabilty of the authentication ceremony in secure messaging applications, the [Secure Socket API](https://owntrust.org), automating interactions with secure email systems, measurements of TLS proxies, measurements of the Steam game network, cloud
+storage, sentiment analysis, wireless networks, streaming video algorithms, peer-to-peer networking, and multicast routing. See [Publications](/publications) for more details.
 
 {% endfilter %}
 
